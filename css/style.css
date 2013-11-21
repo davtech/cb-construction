@@ -236,7 +236,7 @@ h4 {line-height:20px;
 	padding-bottom: 30px;
 	margin-left: auto;
 	/*width:270px; */
-	width: 135px;
+	width: 66px;
 }
 .social li { display:inline; float:left; background-repeat:no-repeat; }
 .social li a {
@@ -269,5 +269,5 @@ li.twitter { background-image:url("../images/twitter.png"); }
 #dev{
 	text-align: center;
 	margin: auto;
-	width: 250px;
+	width: 60%;
 }
