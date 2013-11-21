@@ -46,14 +46,14 @@ $(function() {
         $('.required').each(function() {
           if(jQuery.trim($(this).val()) === '') {
             var labelText = $(this).prev('label').text();
-            $(this).parent().append('<div class="error">Please enter your Email'+labelText+'</div>');
+            $(this).parent().append('<div class="error">Por favor entre com seu e-mail'+labelText+'</div>');
             $(this).addClass('inputError');
             hasError = true;
           } else if($(this).hasClass('email')) {
             var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
             if(!emailReg.test(jQuery.trim($(this).val()))) {
             var labelText = $(this).prev('label').text();
-            $(this).parent().append('<div class="error">Please enter a valid email address'+labelText+'</div>');
+            $(this).parent().append('<div class="error">Digite um e-mail válido'+labelText+'</div>');
             $(this).addClass('inputError');
             hasError = true;
             }
@@ -67,7 +67,7 @@ $(function() {
           var formInput = $(this).serialize();
           $.post($(this).attr('action'),formInput, function(data){
             $('form#subscribe-form').slideUp("fast", function() {
-              $(this).before('<div class="error">Thank you for your subscription!</div>');
+              $(this).before('<div class="error">Enviado com sucesso. Obrigado !</div>');
             });
           });
         }
