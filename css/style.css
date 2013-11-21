@@ -235,7 +235,8 @@ h4 {line-height:20px;
 	margin-right: auto;
 	padding-bottom: 30px;
 	margin-left: auto;
-	width:270px; 
+	/*width:270px; */
+	width: 135px;
 }
 .social li { display:inline; float:left; background-repeat:no-repeat; }
 .social li a {
@@ -263,3 +264,10 @@ li.twitter { background-image:url("../images/twitter.png"); }
  -moz-transition-property: opacity; -moz-transition-duration: 500ms; }
 
 #css3 li:hover { opacity:1; }
+
+/*Desenvolvedor*/
+#dev{
+	text-align: center;
+	margin: auto;
+	width: 250px;
+}
